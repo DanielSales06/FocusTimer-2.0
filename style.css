@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-color: #FFFFFF;
+
+  --bg-soundControls-on: #02799D;
+  --bg-soundControls-off: #E1E1E6;
+  --text-soundControls-off: #323238;
+  --text-soundControls-on: #FFFFFF;
+
+  --text-color: #29292E;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+
+  font-family: 'Roboto', sans-serif;
+  
+  display: grid;
+  min-height: 100vh;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#timer  {
+  font-size: 12.6rem;
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  margin-bottom: 1.7rem;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+#controls svg {
+  width: 4.8rem;
+}
+
+#soundsControls {
+  display: grid;
+  grid-template-areas: 
+  "A B"
+  "C D";
+  gap: 3rem;
+}
+
+#soundsControls svg {
+  width: 13rem;
+}
+
+.onFocus svg path:nth-child(1){
+  fill: var(--bg-soundControls-on);
+}
+
+.onFocus svg path:nth-child(2){
+  fill: var(--text-soundControls-on);
+}
