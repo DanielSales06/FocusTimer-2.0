@@ -1,8 +1,8 @@
 export function Sounds() {
-  const forestAudio = new Audio("./Audio/Floresta.wav?raw=true");
-  const rainAudio = new Audio("./Audio/Chuva.wav?raw=true");
-  const coffeeAudio = new Audio("./Audio/Cafeteria.wav?raw=true");
-  const fireAudio = new Audio("./Audio/Lareira.wav?raw=true");
+  const forestAudio = new Audio("https://github.com/DanielSales06/FocusTimer-2.0/blob/main/audio/Floresta.wav?raw=true");
+  const rainAudio = new Audio("https://github.com/DanielSales06/FocusTimer-2.0/blob/main/audio/Chuva.wav?raw=true");
+  const coffeeAudio = new Audio("https://github.com/DanielSales06/FocusTimer-2.0/blob/main/audio/Cafeteria.wav?raw=true?raw=true");
+  const fireAudio = new Audio("https://github.com/DanielSales06/FocusTimer-2.0/blob/main/audio/Lareira.wav?raw=true");
 
   forestAudio.loop = true;
   rainAudio.loop = true;
