@@ -15,6 +15,7 @@ export function Events({controls, timer, sounds}) {
   buttonPlay.addEventListener("click", function() {
     controls.play();
     timer.countdown();
+    sounds.pressButton();
   });
 
   buttonPause.addEventListener("click", function() {
@@ -25,6 +26,7 @@ export function Events({controls, timer, sounds}) {
   buttonStop.addEventListener("click", function() {
     controls.reset();
     timer.reset();
+    sounds.pressButton();
   });
 
   buttonAddMinutes.addEventListener("click", function() {
@@ -37,6 +39,7 @@ export function Events({controls, timer, sounds}) {
 
   buttonSoundCoffee.addEventListener("click", function() {
     controls.coffee();
+    sounds.pressButton();
     sounds.coffeePlay();
   })
 
