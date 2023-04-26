@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --WHITE: #FFFFFF;
+  --BLACK: #323238
+  --GRAY: #E1E1E6;
+  --PUPPLE: #5a13aa;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+
+  background-color: var(--WHITE);
+  color: var(--BLACK);
+}
+
+.hide {
+  display: none;
+}
+
+.Container {
+  min-height: 100vh;
+
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  transition: all ease 300ms;
+}
+
+button:hover {
+  scale: 1.1;
+}
+
+#display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+#display button svg {
+  width: clamp(2.6rem, 12vw, 4.8rem);
+}
+
+.timer {
+  display: flex;
+
+  font-weight: 500;
+  font-size: clamp(6rem, 6rem + 10vw, 12.6rem);
+  line-height: 14.8rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 4rem;
+}
+
+#sounds {
+  display: grid;
+  grid-template-areas: 
+  "A B"
+  "C D";
+  gap: 3.2rem;
+}
+
+#sounds .on svg path:nth-child(1) {
+  fill: var(--PUPPLE);
+  transition: all ease 400ms;
+}
+
+#sounds .on svg path:nth-child(2) {
+  fill: var(--WHITE);
+  transition: all ease 400ms;
+}
+
+#sounds button svg {
+  width: clamp(12rem, 12vw, 13.8rem);
+}
+
+@media (max-width: 742px) {
+  .Container {
+    padding: 0 5rem;
+  }
+  
+  main {
+    gap: 5rem;
+  }
+
+  #display {
+    gap: 2rem;
+  } 
+
+  #sounds {
+    gap: 1rem 3.2rem;
+  }
+}
