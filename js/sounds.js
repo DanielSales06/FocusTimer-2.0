@@ -1,8 +1,8 @@
 export function Sounds() {
-  const forestAudio = new Audio("./Audio/Floresta.wav");
-  const rainAudio = new Audio("./Audio/Chuva.wav");
-  const coffeeAudio = new Audio("./Audio/Cafeteria.wav");
-  const fireAudio = new Audio("./Audio/Lareira.wav");
+  const forestAudio = new Audio("./Audio/Floresta.wav?raw=true");
+  const rainAudio = new Audio("./Audio/Chuva.wav?raw=true");
+  const coffeeAudio = new Audio("./Audio/Cafeteria.wav?raw=true");
+  const fireAudio = new Audio("./Audio/Lareira.wav?raw=true");
 
   forestAudio.loop = true;
   rainAudio.loop = true;
