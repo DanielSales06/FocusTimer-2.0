@@ -39,7 +39,6 @@ export function Events({controls, timer, sounds}) {
 
   buttonSoundCoffee.addEventListener("click", function() {
     controls.coffee();
-    sounds.pressButton();
     sounds.coffeePlay();
   })
 
